@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #1e1e1e;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     scroll-behavior: smooth;
@@ -10,8 +9,10 @@
 }
 
 body {
-    position: absolute;
+    background: #1e1e1e;
 }
+
+/* sideMenu style start */
 
 .sideMenu {
     position: fixed;
@@ -53,11 +54,16 @@ body {
     text-decoration: none;
 }
 
+/* sideMenu style end */
+
+/* section 1 style start */
+
 section {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    margin-left: 12vw   ;
+    justify-content: space-between;
+    margin-left: 17vw;
+    margin-right: 1rem;
     width: auto;
     height: 100vh;
     font-size: 12px;
@@ -71,14 +77,9 @@ section h2 {
     font-size: 2rem;
 }
 
-#sec2 {
-    justify-content: flex-start;
-}
-
 .containerAbout1 {
     width: 45%;
     height: 50%;
-    padding: 0 3rem;
     line-height: 1.5rem;
 }
 
@@ -106,19 +107,19 @@ section h2 {
 }
 
 .containerAbout2 {
+    width: 50%;
     height: 50%;
-    width: 55%;
     display: flex;
 }
 
 .otherAbout {
-    width: 170px;
+    width: 150px;
     margin: .5rem;
 }
 
 .otherAbout div {
     width: 100%;
-    height: 170px;
+    height: 150px;
     margin-bottom: 2rem;
 }
 
@@ -143,3 +144,63 @@ section h2 {
     font-size: 1.5rem;
     line-height: 2rem;
 }
+
+/* section 1 style end */
+
+/* section 2 style start */
+
+#sec2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.containerNews {
+    display: flex;
+    margin: auto;
+}
+
+.newsBlock {
+    width: 230px;
+    margin-right: 1rem;
+    background-color: #292929;
+    position: relative;
+}
+
+.newsBlock .image {
+    height: 150px;
+}
+
+.newsBlock img {
+    width: 100%;
+    height: 100%;
+}
+
+.newsBlock .icon {
+    position: absolute;
+    right: 10px;
+    width: 40px;
+    height: 30px;
+}
+
+.newsBlock .info {
+    padding: 1rem;
+}
+
+.newsBlock h1, h3, p {
+    margin-bottom: 1rem;
+}
+
+.newsBlock h3 {
+    color: black;
+    background-color: gray;
+    width: fit-content;
+}
+
+.newsBlock h1 {
+    color: gray;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* section 2 style end */
