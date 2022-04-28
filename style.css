@@ -421,7 +421,7 @@ section h3 {
     }
 
     .overlay a {
-        padding: 8px;
+        margin-bottom: 3rem;
         color: #ffffff;
         display: block;
         font-size: 34px;
