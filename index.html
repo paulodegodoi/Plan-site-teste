@@ -15,6 +15,7 @@
         />
         <link rel="stylesheet" href="style.css" />
         <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+        <script src="./script/sideMenu.js"></script>
     </head>
     <body>
         <nav class="sideMenu">
@@ -24,7 +25,7 @@
                 </div>
                 <img src="./imagens/logo.png" alt="logo" />
                 <ul>
-                    <li><a href="#" style="background-image: url(./imagens/numbers/01..png);">/QUEM SOMOS</a></li>
+                    <li><a href="#" class="link1" style="background-image: url(./imagens/numbers/01..png);">/QUEM SOMOS</a></li>
                     <li><a href="#sec1" style="background-image: url(./imagens/numbers/02..png);">/O QUE FAZEMOS</a></li>
                     <li><a href="#sec2" style="background-image: url(./imagens/numbers/03..png);">/PLAN NEWS</a></li>
                     <li><a href="#" style="background-image: url(./imagens/numbers/04..png);">/NOSSOS CLIENTES</a></li>
@@ -32,7 +33,74 @@
                 </ul>
             </div>
         </nav>
+        <nav class="mobileMenu">
+            <div id="myNav" class="overlay">
+                <a href="#" class="closeBtn" onclick="closeNav()">&times;</a>
+                <div class="overlayContainer">
+                    <a href="#">QUEM SOMOS</a>
+                    <a href="#">O QUE FAZEMOS</a>
+                    <a href="#">PLAN NEWS</a>
+                    <a href="#">NOSSOS CLIENTES</a>
+                    <a href="#">CONTATO</a>
+                </div>
+            </div>
+            <img src="./imagens/logo.png" alt="logo">
+            <button class="navButton" onclick="openNav()"><img src="./imagens/button.png" alt="btnMobile"></button>
+        </nav>
         <main>
+            <div class="sliderMobile">
+                <div class="slides">
+                    <!-- Radio Buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- Radio Buttons end-->
+
+                    <div style="position: absolute; top: 7.9vh; right: 0; z-index: 9;">
+                        <img src="imagens/mobile/blockBorder.png" alt="">
+                    </div>
+
+                    <!-- Slide Images start -->
+                    <div class="slide first">
+                        <img src="./imagens/mobile/1.png" alt="Imagem 1">
+                    </div>
+                    <div class="slide">
+                        <img src="./imagens/mobile/2.png" alt="Imagem 2">
+                    </div>
+                    <div class="slide">
+                        <img src="./imagens/mobile/3.png" alt="Imagem 3">
+                    </div>
+                    <div class="slide">
+                        <img src="./imagens/mobile/4.png" alt="Imagem 4">
+                    </div>div
+                    <!-- Slide Images end -->
+                    
+                    <!-- Navigation auto start-->
+                    <div class="navigationAuto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!-- Navigation auto end-->
+
+                </div>
+                <div class="manualNavigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <div class="infoMobile">
+                    <h3>HUMANO VIRTUAL</h3>
+                    <h1>Conheça o Papai Noel Virtual desenvolvido pela PlanXP</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, exercitationem corporis? Natus cum eos autem velit! Excepturi, numquam. Vel cupiditate, doloremque architecto eveniet itaque asperiores in eius corporis nesciunt minima.
+                    </p>
+                    <a href="#">SAIBA MAIS <img src="./imagens/arrow.png" alt="arrow"></a>
+                </div>
+            </div>
             <section id="sec1">
                 <div class="containerAbout1">
                     <div class="mainTitle" style="background-image: url(./imagens/numbers/02..png);">
@@ -98,7 +166,7 @@
                             Experimente inovar com <strong>PlanXP</strong> para
                             <strong>desenvolver os seus jogos digitais!</strong>
                         </p>
-                        <a href="#">ENTRE EM CONTATO AGORA MESMO <img src="./imagens/arrow.png" alt="arrow"></a>
+                        <a href="#sec3">ENTRE EM CONTATO AGORA MESMO <img src="./imagens/arrow.png" alt="arrow"></a>
                     </div>
                 </div>
             </section>
@@ -115,6 +183,9 @@
                 <div class="containerNews">
                     <div class="newsBlock">
                         <div class="image">
+                            <div class="blockIcon">
+                                <img src="./imagens/mobile/blockBorder.png" alt="blockBorder">
+                            </div>
                             <img src="./imagens/section-2/1.png" alt="1" style="object-position: left;"/>
                         </div>
                         <div class="info">
@@ -132,6 +203,9 @@
                     </div>
                     <div class="newsBlock">
                         <div class="image">
+                            <div class="blockIcon">
+                                <img src="./imagens/mobile/blockBorder.png" alt="blockBorder">
+                            </div>
                             <img src="./imagens/section-2/2.png" alt="1" style="object-position: bottom"/>
                         </div>
                         <div class="info">
@@ -149,6 +223,9 @@
                     </div>
                     <div class="newsBlock">
                         <div class="image">
+                            <div class="blockIcon">
+                                <img src="./imagens/mobile/blockBorder.png" alt="blockBorder">
+                            </div>
                             <img src="./imagens/section-2/3.png" alt="1" style="object-position: top;"/>
                         </div>
                         <div class="info">
@@ -166,6 +243,9 @@
                     </div>
                     <div class="newsBlock">
                         <div class="image">
+                            <div class="blockIcon">
+                                <img src="./imagens/mobile/blockBorder.png" alt="blockBorder">
+                            </div>
                             <img src="./imagens/section-2/4.png" alt="1" />
                         </div>
                         <div class="info">
@@ -183,6 +263,9 @@
                     </div>
                     <div class="newsBlock">
                         <div class="image">
+                            <div class="blockIcon">
+                                <img src="./imagens/mobile/blockBorder.png" alt="blockBorder">
+                            </div>
                             <img
                                 src="./imagens/section-2/5.png"
                                 alt="1"
@@ -234,7 +317,7 @@
                             </div>
                         </div>
                         <div>
-                            <label>Mensagem:</ç>
+                            <label>Mensagem:</divç>
                             <textarea
                                 name="mensage"
                                 id="mensage"
@@ -256,9 +339,9 @@
                                 Marketing.
                             </p>
                             <div class="socialIcons">
-                                <img src="./imagens/section-3/fb.png" alt="facebook">
-                                <img src="./imagens/section-3/ig.png" alt="intagram">
-                                <img src="./imagens/section-3/yt.png" alt="youtube">
+                                <a href="#"><img src="./imagens/section-3/fb.png" alt="facebook"></a>
+                                <a href="#"><img src="./imagens/section-3/ig.png" alt="intagram"></a>
+                                <a href="#"><img src="./imagens/section-3/yt.png" alt="youtube"></a>
                             </div>
                         </div>
                         <div>
@@ -321,5 +404,6 @@
                 </div>
             </section>
         </main>
+        <script src="./script/slideMobile.js"></script>
     </body>
 </html>

@@ -28,6 +28,10 @@ main a {
     color: #939598;
 }
 
+.mobileMenu, .sliderMobile {
+    display: none;
+}
+
 /* sideMenu style start */
 
 .sideMenu {
@@ -66,7 +70,6 @@ main a {
 .sideMenu li {
     height: 80px;
     font-size: 13px;
-    
 }
 
 .sideMenu a {
@@ -78,6 +81,10 @@ main a {
     height: 100%;
     text-decoration: none;
     color: #ffffff;
+}
+
+.sideMenu a:hover {
+    color: #939598;
 }
 
 /* sideMenu style end */
@@ -128,21 +135,26 @@ section h3 {
     line-height: 1.5rem;
 }
 
+.containerAbout1 h3 {
+    margin-bottom: 1rem;
+}
+
 .containerAbout2 {
     width: 50%;
     height: 50%;
     display: flex;
     margin-right: 1.5rem;
+    margin-left: 1.5rem;
 }
 
 .otherAbout {
-    width: 170px;
+    width: 150px;
     margin: .5rem;
 }
 
 .otherAbout div {
     width: 100%;
-    height: 170px;
+    height: 150px;
     margin-bottom: 2rem;
 }
 
@@ -159,12 +171,10 @@ section h3 {
 
 .otherAbout a {
     text-decoration: none;
-    font-size: 14px;
-    color: grey;
 }
 
 .otherAbout #highlightText {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -195,18 +205,19 @@ section h3 {
 }
 
 .containerNews {
-    display: flex;
+    display: inline-flex;
+    overflow-x: auto;
 }
 
 .newsBlock {
-    width: 250px;
+    width: auto;
     margin-right: 1rem;
     background-color: #292929;
-    position: relative;
 }
 
 .newsBlock .image {
     height: 160px;
+    position: relative;;
 }
 
 .newsBlock .image img {
@@ -242,6 +253,12 @@ section h3 {
     font-weight: 400;
 }
 
+.blockIcon {
+    position: absolute;
+    top: -1%;
+    right: -1%;
+}
+
 /* section 2 style end */
 
 /* section 3 style start */
@@ -252,9 +269,8 @@ section h3 {
     margin-bottom: 2rem;
 }
 
-form label {
-    margin-top: 1rem;
-    margin-bottom: .2rem;
+.formContact p {
+    margin-bottom: 1rem;
 }
 
 .formContact input, .formContact textarea {
@@ -350,3 +366,196 @@ form label {
 }
 
 /* section 3 style end */
+
+/* layout mobile media query start */
+
+@media (max-width: 1400px) {
+
+    .sideMenu, section {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem 2rem;
+        height: 8vh;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+    }
+
+    .mobileMenu button {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobileMenu button img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .mobileMenu .overlay {
+        width: 0;
+        height: 100%;
+        z-index: 9;
+        position: fixed;
+        left: 0;
+        top: 8vh;
+        overflow-x: hidden;
+        transition: all 0.5s;
+        background-color: #1e1e1e;
+    }
+
+    .overlayContainer {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        color: #ffffff;
+        display: block;
+        font-size: 34px;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #939598;
+    }
+
+    .overlay .closeBtn {
+        position: absolute;
+        top: 25px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    .sliderMobile {
+        display: block;
+        margin: 0 auto;
+        width: 400px;
+        height: 1000px;
+        overflow: hidden;
+        background-color: #292929;
+    }
+
+    .slides {
+        width: 200%;
+        height: 300px;
+        display: flex;
+    }
+
+    .slides input {
+        display: none;
+    }
+
+    .slide {
+        position: relative;
+        transition: 2s;
+    }
+
+    .slide img {
+        width: 400px;
+    }
+
+    .manualNavigation {
+        position: absolute;
+        width: 400px;
+        margin-top: -70px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .manual-btn {
+        border: 2px solid #fff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .manual-btn:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    .manual-btn:hover {
+        background-color: #939598;
+    }
+
+    #radio1:checked ~ .first {
+        margin-left: 0;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -50%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -100%;
+    }
+    
+    #radio4:checked ~ .first {
+        margin-left: -150%;
+    }
+
+    .navigationAuto div {
+        border: 2px solid #fff;
+        background-color: #fff;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .navigationAuto {
+        position: absolute;
+        width: 400px;
+        margin-top: 230px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigationAuto div:not(:last-child) {
+        margin-right: 1rem;
+    }
+
+    #radio1:checked ~ .navigationAuto .auto-btn1 {
+        background-color: #939598;
+    }
+    #radio2:checked ~ .navigationAuto .auto-btn2 {
+        background-color: #939598;
+    }
+    #radio3:checked ~ .navigationAuto .auto-btn3 {
+        background-color: #939598;
+    }
+
+    #radio4:checked ~ .navigationAuto .auto-btn4 {
+        background-color: #939598;
+    }
+
+    .infoMobile {
+        padding: 0 2rem;
+    }
+
+    .infoMobile h3 {
+        display: inline;
+        background-color: #939598;
+        color: black;
+        padding: 0 5px;
+    }
+
+    .infoMobile h1 {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+        color: #939598;
+    }
+
+    .infoMobile p {
+        margin-bottom: 1rem;
+    }
+}
+
+/* layout mobile media query end */
