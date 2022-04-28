@@ -393,11 +393,11 @@ section h3 {
         border: none;
         cursor: pointer;
         height: 30px;
+        width: 30px;
     }
 
     .mobileMenu button img {
         height: 80%;
-        width: 100%;
     }
 
     .mobileMenu .overlay {
