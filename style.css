@@ -378,9 +378,14 @@ section h3 {
     .mobileMenu {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: .5rem 2rem;
         height: 8vh;
         border-bottom: 1px solid rgba(128, 128, 128, 0.26);
+    }
+
+    .mobileMenu img {
+        height: 100%;
     }
 
     .mobileMenu button {
@@ -391,7 +396,7 @@ section h3 {
     }
 
     .mobileMenu button img {
-        height: 100%;
+        height: 80%;
         width: 100%;
     }
 
