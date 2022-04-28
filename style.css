@@ -387,7 +387,7 @@ section h3 {
         background: none;
         border: none;
         cursor: pointer;
-        height: 100%;
+        height: 50px;
     }
 
     .mobileMenu button img {
