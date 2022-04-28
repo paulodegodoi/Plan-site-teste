@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
     scroll-behavior: smooth;
+    color: #ffffff;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -13,13 +13,19 @@ body {
 }
 
 h1, h2, h3 {
-    color: gray;
     font-weight: 400;
-    margin-bottom: 2rem;
 }
 
 a {
     text-decoration: none;
+}
+
+a img {
+    margin-left: .2rem;
+}
+
+main a {
+    color: #939598;
 }
 
 /* sideMenu style start */
@@ -43,8 +49,8 @@ a {
 .sideMenu h2 {
     width: auto;
     margin: auto;
+    color: #939598;
     font-size: 1rem;
-    color: gray;
     background-repeat: no-repeat;
 }
 
@@ -71,6 +77,7 @@ a {
     background-repeat: no-repeat;
     height: 100%;
     text-decoration: none;
+    color: #ffffff;
 }
 
 /* sideMenu style end */
@@ -89,20 +96,30 @@ section {
 }
 
 section .mainTitle {
-    height: 50px;
-    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+    background-repeat: no-repeat;
+    height: 70px;
+    background-size: contain;
 }
 
-section h1 {
-    display: flex;
-    height: 100%;
+section .mainTitle h1 {
     font-size: 2.5rem;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    margin-bottom: .5rem;
+    color: #939598;
 }
 
 section h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #939598;
+}
+
+section h3 {
+    font-size: 13px;
+    color: #a3a3a3;
 }
 
 .containerAbout1 {
@@ -111,41 +128,25 @@ section h2 {
     line-height: 1.5rem;
 }
 
-.containerAbout1 h1 {
-    font-size: 2rem;
-}
-
-.containerAbout1 h2 {
-    font-size: 1.5rem;
-}
-
-.containerAbout1 h3 {
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.containerAbout1 p {
-    margin-bottom: 0.5rem;
-}
-
 .containerAbout2 {
     width: 50%;
     height: 50%;
     display: flex;
+    margin-right: 1.5rem;
 }
 
 .otherAbout {
-    width: 150px;
+    width: 170px;
     margin: .5rem;
 }
 
 .otherAbout div {
     width: 100%;
-    height: 150px;
+    height: 170px;
     margin-bottom: 2rem;
 }
 
-.otherAbout img {  
+.otherAbout .aboutImage img {  
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -179,19 +180,18 @@ section h2 {
 
 .title {
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 2rem;
+    justify-content: center;
+    /* margin-bottom: 2rem; */
 }
 
 .title h1 {
     margin-bottom: 0;
 }
 
-.title a {
-    padding-left: 2rem;
-    display: block;
-    padding-bottom: .5rem;
-    /* height: 40px; */
+.title .linkNews {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
 }
 
 .containerNews {
@@ -199,19 +199,20 @@ section h2 {
 }
 
 .newsBlock {
-    width: 230px;
+    width: 250px;
     margin-right: 1rem;
     background-color: #292929;
     position: relative;
 }
 
 .newsBlock .image {
-    height: 150px;
+    height: 160px;
 }
 
-.newsBlock img {
+.newsBlock .image img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .newsBlock .icon {
@@ -225,7 +226,7 @@ section h2 {
     padding: 1rem;
 }
 
-.newsBlock h1, h3, p {
+.newsBlock h1, .newsBlock h3, .newsBlock p {
     margin-bottom: 1rem;
 }
 
@@ -294,6 +295,8 @@ form label {
 
 .formContact button {
     margin-top: 1rem;
+    color: #939598;
+    cursor: pointer;
 }
 
 .follow {
@@ -303,12 +306,17 @@ form label {
     height: 50%;
 }
 
-.follow h3 {
-    font-size: 1.3rem;
+.follow .textInfo {
+    margin-bottom: 1rem;
 }
 
-.location img {
-    margin-right: 1rem;
+.follow h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.follow .location img {
+    margin-right: .5rem;
 }
 
 .location, .brands {
@@ -317,8 +325,9 @@ form label {
 }
 
 .location div, .brands div {
-    width: 200px;
+    width: 180px;
     line-height: 1.5rem;
+    margin-right: 1rem;
 }
 
 .location p, .brands p {
@@ -337,6 +346,7 @@ form label {
     height: 40%;
     display: flex;
     align-items: flex-end;
+    margin-bottom: 1rem;
 }
 
 /* section 3 style end */
