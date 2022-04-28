@@ -14,18 +14,21 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
     </head>
     <body>
         <nav class="sideMenu">
             <div>
-                <h2>Que tal inovar com a gente?</h2>
+                <div>
+                    <h2 style="background-image: url(./imagens/numbers/;\).png);">Que tal inovar com a gente?</h2>
+                </div>
                 <img src="./imagens/logo.png" alt="logo" />
                 <ul>
-                    <li><a href="#">/QUEM SOMOS</a></li>
-                    <li><a href="#sec1">/O QUE FAZEMOS</a></li>
-                    <li><a href="#sec2">/PLAN NEWS</a></li>
-                    <li><a href="#">/NOSSOS CLIENTES</a></li>
-                    <li><a href="#sec3">/CONTATO</a></li>
+                    <li><a href="#" style="background-image: url(./imagens/numbers/01..png);">/QUEM SOMOS</a></li>
+                    <li><a href="#sec1" style="background-image: url(./imagens/numbers/02..png);">/O QUE FAZEMOS</a></li>
+                    <li><a href="#sec2" style="background-image: url(./imagens/numbers/03..png);">/PLAN NEWS</a></li>
+                    <li><a href="#" style="background-image: url(./imagens/numbers/04..png);">/NOSSOS CLIENTES</a></li>
+                    <li><a href="#sec3" style="background-image: url(./imagens/numbers/05..png);">/CONTATO</a></li>
                 </ul>
             </div>
         </nav>
@@ -206,7 +209,9 @@
             </section>
             <section id="sec3">
                 <div class="formContact">
-                    <h1>/Contato</h1>
+                    <div class="mainTitle">
+                        <h1 style="background-image: url(./imagens/numbers/05..png);">/Contato</h1>
+                    </div>
                     <p>
                         Gostou de saber mais sobre as inovações tecnológicas e
                         também quer oferecer novas experiências aos seus
@@ -215,15 +220,15 @@
                         possibilidades do mundo virtual.
                     </p>
                     <form action="submit">
-                        <p>Nome:</p>
+                        <label>Nome:</label>
                         <input type="text" name="name" id="name" />
                         <div class="contact">
                             <div>
-                                <p>E-mail:</p>
+                                <label>E-mail:</label>
                                 <input type="email" name="email" id="email" />
                             </div>
                             <div>
-                                <p>Telefone:</p>
+                                <label>Telefone:</label>
                                 <input
                                     type="number"
                                     name="number"
@@ -232,7 +237,7 @@
                             </div>
                         </div>
                         <div>
-                            <p>Mensagem:</p>
+                            <label>Mensagem:</ç>
                             <textarea
                                 name="mensage"
                                 id="mensage"
@@ -240,6 +245,7 @@
                                 rows="10"
                             ></textarea>
                         </div>
+                        <div class="g-recaptcha" data-sitekey="6Lc4aacfAAAAACWWKOsHXSUFo-P3hCdhSaRU6Qd2"></div>
                         <button>ENVIAR-></button>
                     </form>
                 </div>
@@ -259,7 +265,7 @@
                             </div>
                         </div>
                         <div>
-                            <h3>/RS</h3>
+                            <h3><img src="./imagens/section-3/point.png" alt="point" style="margin-right: .1rem;">/RS</h3>
                             <p>Rua Onze de Junho, 243 Novo Hamburgo</p>
                             <p>/ RS Brasil</p>
                             <p>+55 51 98229.0400</p>
@@ -267,7 +273,7 @@
                             <a href="#">VER NO GOOGLE MAPS-></a>
                         </div>
                         <div>
-                            <h3>/SP</h3>
+                            <h3><img src="./imagens/section-3/point.png" alt="point" style="margin-right: .1rem;">/SP</h3>
                             <p>Rua Ibijaú, 355/Sala 1309 São Paulo </p>
                             <p>/ SP Brasil</p>
                             <p>+55 11 98871.8556</p>

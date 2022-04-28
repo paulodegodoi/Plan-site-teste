@@ -41,9 +41,11 @@ a {
 }
 
 .sideMenu h2 {
+    width: auto;
+    margin: auto;
     font-size: 1rem;
     color: gray;
-    text-align: center;
+    background-repeat: no-repeat;
 }
 
 .sideMenu img {
@@ -56,11 +58,18 @@ a {
 }
 
 .sideMenu li {
-    margin: 4rem 0;
+    height: 80px;
     font-size: 13px;
+    
 }
 
 .sideMenu a {
+    display: flex;
+    align-items: center;
+    background-position: left;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 100%;
     text-decoration: none;
 }
 
@@ -79,8 +88,17 @@ section {
     font-size: 12px;
 }
 
+section .mainTitle {
+    height: 50px;
+    width: 50px;
+}
+
 section h1 {
+    display: flex;
+    height: 100%;
     font-size: 2.5rem;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 section h2 {
@@ -230,11 +248,17 @@ section h2 {
 .formContact {
     width: 40%;
     height: 50%;
+    margin-bottom: 2rem;
 }
 
-.formContact p {
+form label {
     margin-top: 1rem;
     margin-bottom: .2rem;
+}
+
+.formContact input, .formContact textarea {
+    margin-top: .2rem;
+    margin-bottom: 1rem;
 }
 
 .formContact input {
@@ -242,6 +266,7 @@ section h2 {
     border: 1px solid rgba(128, 128, 128, 0.26);
     width: 100%;
     height: 30px;
+    outline: none;
 }
 
 .formContact textarea {
@@ -249,6 +274,8 @@ section h2 {
     height: 100px;
     background: none;
     border: 1px solid rgba(128, 128, 128, 0.26);
+    margin-bottom: 1rem;
+    outline: none;
 }
 
 .formContact button {
@@ -274,7 +301,10 @@ section h2 {
     flex-direction: column;
     width: 50%;
     height: 50%;
-    margin-top: 2rem;
+}
+
+.follow h3 {
+    font-size: 1.3rem;
 }
 
 .location img {
@@ -307,8 +337,6 @@ section h2 {
     height: 40%;
     display: flex;
     align-items: flex-end;
-    /* display: flex;
-    align-items: flex-end; */
 }
 
 /* section 3 style end */
