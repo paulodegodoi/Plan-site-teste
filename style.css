@@ -496,7 +496,7 @@ section h3 {
     }
 
     .manual-btn:hover {
-        background-color: #939598;
+        /* background-color: #939598; */
     }
 
     #radio1:checked ~ .first {
