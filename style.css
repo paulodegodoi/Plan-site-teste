@@ -446,6 +446,7 @@ section h3 {
         height: 80vh;
         overflow: hidden;
         background-color: #292929;
+        position: relative;
     }
 
     .slides {
@@ -467,6 +468,13 @@ section h3 {
         width: 400px;
     }
 
+    .slideBox {
+        position: absolute; 
+        top: -.5%; 
+        right: -.5%; 
+        z-index: 7;
+    }
+    
     .manualNavigation {
         position: absolute;
         width: 400px;
