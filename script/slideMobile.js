@@ -19,6 +19,7 @@ function nextImage() {
     if(count === 1 || count === 3) {
         tagTitle.innerHTML = "HUMANO VIRTUAL"
         title.innerHTML = "Conheça o Papai Noel Virtual desenvolvido pela PlanXP"
+        document.getElementById("blockBox").src="./imagens//mobile/blockBorder1.png"
     }
     if(count === 2 || count === 4) {
         tagTitle.innerHTML = "DHL"
