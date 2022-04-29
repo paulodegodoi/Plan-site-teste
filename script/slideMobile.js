@@ -23,6 +23,7 @@ function nextImage() {
     if(count === 2 || count === 4) {
         tagTitle.innerHTML = "DHL"
         title.innerHTML = "Treinamento em realidade virtual na DHL"
+        document.getElementById("blockBox").src="./imagens//mobile/blockBorder2.png"
     }
 
 }
