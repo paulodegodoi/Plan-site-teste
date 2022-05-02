@@ -140,11 +140,10 @@ section h3 {
 }
 
 .containerAbout2 {
-    width: 50%;
+    width: 55%;
     height: 50%;
     display: flex;
-    margin-right: 1.5rem;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 
 .otherAbout {
@@ -216,8 +215,8 @@ section h3 {
 }
 
 .newsBlock .image {
-    height: 160px;
-    position: relative;;
+    height: 150px;
+    position: relative;
 }
 
 .newsBlock .image img {
@@ -245,6 +244,7 @@ section h3 {
     color: black;
     background-color: gray;
     width: fit-content;
+    padding: 0 .3rem;
 }
 
 .newsBlock h1 {
@@ -257,6 +257,7 @@ section h3 {
     position: absolute;
     top: -1%;
     right: -1%;
+    width: 30%;
 }
 
 /* section 2 style end */
