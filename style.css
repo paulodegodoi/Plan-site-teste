@@ -80,12 +80,16 @@ main a {
     background-repeat: no-repeat;
     height: 100%;
     text-decoration: none;
-    color: #ffffff;
 }
 
 .sideMenu a:hover {
     color: #939598;
 }
+
+.sideMenu a.active {
+    color: #939598;
+}
+
 
 /* sideMenu style end */
 
@@ -264,10 +268,13 @@ section h3 {
 
 /* section 3 style start */
 
+#sec3 {
+    margin-bottom: 2rem;
+}
+
 .formContact {
     width: 40%;
-    height: 50%;
-    margin-bottom: 2rem;
+    height: 60%;
 }
 
 .formContact p {
